@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Ty Môi Trường Việt Xuân Mới - Giải Pháp Môi Trường Bền Vững</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary-600">VXEN</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition">Trang chủ</a>
+                        <a href="#about" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition">Giới thiệu</a>
+                        <a href="#services" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition">Dịch vụ</a>
+                        <a href="#features" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition">Tính năng</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary-600">Trang chủ</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary-600">Giới thiệu</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary-600">Dịch vụ</a>
+                <a href="#features" class="block px-3 py-2 text-gray-700 hover:text-primary-600">Tính năng</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary-600">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 bg-gradient-to-br from-primary-50 via-white to-primary-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        Giải Pháp <span class="text-primary-600">Môi Trường</span> Bền Vững
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Chúng tôi cam kết mang đến những giải pháp môi trường hiện đại, hiệu quả và thân thiện với môi trường. Với hơn 10 năm kinh nghiệm, chúng tôi tự hào là đối tác tin cậy của bạn.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Liên hệ ngay
+                        </a>
+                        <a href="#services" class="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold border-2 border-primary-600 hover:bg-primary-50 transition">
+                            Xem dịch vụ
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-primary-200 rounded-3xl transform rotate-6 opacity-20"></div>
+                    <div class="relative bg-white rounded-3xl shadow-2xl p-8">
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-leaf text-primary-600 text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900">Bền vững</h3>
+                                    <p class="text-gray-600">Giải pháp thân thiện môi trường</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-recycle text-primary-600 text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900">Tái chế</h3>
+                                    <p class="text-gray-600">Xử lý chất thải hiệu quả</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-water text-primary-600 text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-gray-900">Xử lý nước</h3>
+                                    <p class="text-gray-600">Công nghệ tiên tiến</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-primary-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">10+</div>
+                    <div class="text-primary-100">Năm kinh nghiệm</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">500+</div>
+                    <div class="text-primary-100">Dự án hoàn thành</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">200+</div>
+                    <div class="text-primary-100">Khách hàng tin tưởng</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold mb-2">98%</div>
+                    <div class="text-primary-100">Hài lòng khách hàng</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Về Chúng Tôi</h2>
+                <div class="w-24 h-1 bg-primary-600 mx-auto mb-4"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Công ty Cổ phần Môi trường Việt Xuân Mới - Đối tác tin cậy trong lĩnh vực môi trường
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=600&fit=crop" alt="Môi trường" class="rounded-2xl shadow-xl">
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Sứ mệnh của chúng tôi</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Với hơn 10 năm kinh nghiệm trong ngành, chúng tôi cam kết mang đến những giải pháp môi trường toàn diện, hiện đại và bền vững. Chúng tôi không chỉ xử lý chất thải mà còn tạo ra giá trị bền vững cho cộng đồng và môi trường.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Đội ngũ chuyên gia giàu kinh nghiệm cùng công nghệ tiên tiến, chúng tôi tự hào là đối tác hàng đầu trong việc bảo vệ môi trường và phát triển bền vững.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-600 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Đội ngũ chuyên nghiệp</h4>
+                                <p class="text-gray-600">Nhân viên được đào tạo bài bản, giàu kinh nghiệm</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-600 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Công nghệ hiện đại</h4>
+                                <p class="text-gray-600">Áp dụng công nghệ tiên tiến trong xử lý môi trường</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary-600 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Cam kết chất lượng</h4>
+                                <p class="text-gray-600">Đảm bảo chất lượng và hiệu quả tối đa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Dịch Vụ Của Chúng Tôi</h2>
+                <div class="w-24 h-1 bg-primary-600 mx-auto mb-4"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Cung cấp các giải pháp môi trường toàn diện và chuyên nghiệp
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-water text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Xử Lý Nước Thải</h3>
+                    <p class="text-gray-600 mb-6">
+                        Hệ thống xử lý nước thải công nghiệp và sinh hoạt với công nghệ tiên tiến, đảm bảo chất lượng nước đầu ra đạt tiêu chuẩn.
+                    </p>
+                    <a href="#contact" class="text-primary-600 font-semibold hover:text-primary-700">
+                        Tìm hiểu thêm <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-recycle text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Xử Lý Chất Thải</h3>
+                    <p class="text-gray-600 mb-6">
+                        Thu gom, vận chuyển và xử lý chất thải rắn, chất thải nguy hại theo quy trình chuyên nghiệp và an toàn.
+                    </p>
+                    <a href="#contact" class="text-primary-600 font-semibold hover:text-primary-700">
+                        Tìm hiểu thêm <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-wind text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Xử Lý Khí Thải</h3>
+                    <p class="text-gray-600 mb-6">
+                        Hệ thống lọc và xử lý khí thải công nghiệp, giảm thiểu ô nhiễm không khí, bảo vệ môi trường.
+                    </p>
+                    <a href="#contact" class="text-primary-600 font-semibold hover:text-primary-700">
+                        Tìm hiểu thêm <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-seedling text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Tư Vấn Môi Trường</h3>
+                    <p class="text-gray-600 mb-6">
+                        Tư vấn, đánh giá tác động môi trường, lập báo cáo và hỗ trợ doanh nghiệp tuân thủ quy định.
+                    </p>
+                    <a href="#contact" class="text-primary-600 font-semibold hover:text-primary-700">
+                        Tìm hiểu thêm <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Bảo Trì Hệ Thống</h3>
+                    <p class="text-gray-600 mb-6">
+                        Dịch vụ bảo trì, bảo dưỡng định kỳ các hệ thống xử lý môi trường, đảm bảo vận hành ổn định.
+                    </p>
+                    <a href="#contact" class="text-primary-600 font-semibold hover:text-primary-700">
+                        Tìm hiểu thêm <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-primary-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Giám Sát Môi Trường</h3>
+                    <p class="text-gray-600 mb-6">
+                        Dịch vụ quan trắc và giám sát môi trường định kỳ, cung cấp dữ liệu chính xác và kịp thời.
+                    </p>
+                    <a href="#contact" class="text-primary-600 font-semibold hover:text-primary-700">
+                        Tìm hiểu thêm <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Tại Sao Chọn Chúng Tôi</h2>
+                <div class="w-24 h-1 bg-primary-600 mx-auto mb-4"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Những lý do khiến chúng tôi trở thành lựa chọn hàng đầu
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-primary-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Chất Lượng Hàng Đầu</h3>
+                    <p class="text-gray-600">Đảm bảo chất lượng dịch vụ tốt nhất với tiêu chuẩn quốc tế</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-primary-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Nhanh Chóng</h3>
+                    <p class="text-gray-600">Phản hồi nhanh chóng, xử lý kịp thời mọi yêu cầu của khách hàng</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-dollar-sign text-primary-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Giá Cả Hợp Lý</h3>
+                    <p class="text-gray-600">Báo giá minh bạch, cạnh tranh và phù hợp với ngân sách</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-primary-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Hỗ Trợ 24/7</h3>
+                    <p class="text-gray-600">Đội ngũ hỗ trợ luôn sẵn sàng phục vụ khách hàng mọi lúc</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary-50 to-primary-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Liên Hệ Với Chúng Tôi</h2>
+                <div class="w-24 h-1 bg-primary-600 mx-auto mb-4"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hãy để chúng tôi giúp bạn giải quyết các vấn đề môi trường
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Thông Tin Liên Hệ</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Địa chỉ</h4>
+                                <p class="text-gray-600">Xóm 2, Xã Minh Đức, Thành phố Phổ Yên, Tỉnh Thái Nguyên, Việt Nam</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Điện thoại</h4>
+                                <p class="text-gray-600">+84568658424</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-primary-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                                <p class="text-gray-600">1986truongdacgiang@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Gửi Tin Nhắn</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Họ và tên</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent outline-none transition" placeholder="Nhập họ và tên">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent outline-none transition" placeholder="Nhập email">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Số điện thoại</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent outline-none transition" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Tin nhắn</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent outline-none transition" placeholder="Nhập tin nhắn"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition shadow-lg hover:shadow-xl">
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">VXEN</h3>
+                    <p class="text-gray-400 mb-4">
+                        Công ty Cổ phần Môi trường Việt Xuân Mới - Giải pháp môi trường bền vững cho tương lai.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary-600 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Liên kết nhanh</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary-400 transition">Trang chủ</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary-400 transition">Giới thiệu</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary-400 transition">Dịch vụ</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary-400 transition">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Dịch vụ</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition">Xử lý nước thải</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition">Xử lý chất thải</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition">Xử lý khí thải</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-400 transition">Tư vấn môi trường</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Thông tin</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2 text-primary-400"></i> Xóm 2, Xã Minh Đức, Phổ Yên, Thái Nguyên</li>
+                        <li><i class="fas fa-phone mr-2 text-primary-400"></i> +84568658424</li>
+                        <li><i class="fas fa-envelope mr-2 text-primary-400"></i> 1986truongdacgiang@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Công ty Cổ phần Môi trường Việt Xuân Mới. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth scroll script -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+
